@@ -1,21 +1,20 @@
-# 概要
-Mermaid.js を利用して、PukiWiki ページ内にフローチャートなどの図を簡単に描画できる PukiWiki プラグインです。  
-`#mermaid()` によるシンプルな記述で、Mermaid.js 記法に基づく図を表示できます。
+# 1. 概要
+[Mermaid](https://mermaid.js.org/)を利用して、PukiWiki ページ内にフローチャートなどの図を簡単に描画できる PukiWiki プラグインです。  
+`#mermaid()` によるシンプルな記述でフローチャートやシーケンス図など、Mermaid記法に基づく様々な図を表示できます。
 
 ---
 
-# スクリーンショット
+# 2. スクリーンショット
 ![screenshot](screenshot.png)  
-※ スクリーンショット画像は適宜差し替えてください。
 
 ---
 
-# インストール方法
+# 3. インストール方法
 
-## プラグインの配置
-1. `plugin_mermaid.inc.php` を PukiWiki の `plugin/` ディレクトリに配置します。
+## 3.1. プラグインの配置
+`plugin_mermaid.inc.php` を PukiWiki の `plugin/` ディレクトリに配置します。
 
-## JavaScript有効化（PukiWiki 1.5.1 以下必須）
+## 3.2. JavaScript有効化（PukiWiki 1.5.1 以下必須）
 PukiWiki 1.5.1 以前のバージョンでは、`pukiwiki.ini.php` に以下の定義が必要です：
 
 ```php
@@ -26,9 +25,9 @@ define('PKWK_ALLOW_JAVASCRIPT', 1);
 
 ---
 
-# 記述方法
+# 4. 記述方法
 
-ブロックプラグインとして次のように記述します：
+ブロック型プラグインとして次のように記述します：
 
 ```pukiwiki
 #mermaid(){{
@@ -64,20 +63,20 @@ flowchart TD
 
 ---
 
-# ダウンロード方法
+# 5. ダウンロード方法
 
-GitHubから `plugin_mermaid.inc.php` をダウンロードしてください。
-ファイル1つを `plugin/` に配置するだけです。
+右上のCodeボタンより、ダウンロードしてください。
+ファイル1つ（`plugin_mermaid.inc.php`）を `plugin/` に配置するだけです。
 
 ---
 
-# ライセンス
+# 6. ライセンス
 
 GPL ライセンスに基づき公開します。
 
 ---
 
-# 参考情報：Mermaid.js をローカル配置する方法
+# 7. 参考情報：Mermaid.js をローカル配置する方法
 
 デフォルトでは CDN 経由で以下の URL から `mermaid.min.js` を読み込みます：
 
